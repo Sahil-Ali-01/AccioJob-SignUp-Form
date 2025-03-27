@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .signup-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 0;
+            outline: none;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .radio-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .btn-signup {
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 12px 40px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-signup:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Signup</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Confirm Password" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="dd----yyyy" required>
+            </div>
+            
+            <div class="radio-group">
+                <label class="radio-label">
+                    <input type="radio" name="userType" value="student" checked>
+                    Student
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="userType" value="employee">
+                    Employee
+                </label>
+            </div>
+            
+            <label class="checkbox-label">
+                <input type="checkbox" checked>
+                I agree to all the Terms and conditions
+            </label>
+            
+            <button type="submit" class="btn-signup">Signup</button>
+        </form>
+    </div>
+</body>
+</html>
